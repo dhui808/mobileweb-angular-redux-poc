@@ -16,7 +16,7 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent extends PageBase implements OnInit {
-  @ViewChild(NotificationBarComponent, {static: false}) notificationBar: NotificationBarComponent
+  @ViewChild(NotificationBarComponent) notificationBar: NotificationBarComponent
   
   controller: LoginController;	
   viewModel: any;

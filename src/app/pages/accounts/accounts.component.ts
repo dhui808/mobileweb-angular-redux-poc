@@ -10,7 +10,7 @@ import BankingBase from '../../base/BankingBase'
 })
 export class AccountsComponent implements OnInit {
 
-  @ViewChild(DetailsComponent, {static: false}) details: DetailsComponent
+  @ViewChild(DetailsComponent) details: DetailsComponent
   
 	constructor(public router: Router) { }
 
