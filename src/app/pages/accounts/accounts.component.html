@@ -1,0 +1,17 @@
+<div class="container variableHeight f-topbar-fixed">
+	<div>
+		<app-nav-bar></app-nav-bar>
+	</div>
+
+    <div>
+ 		<app-notification-bar></app-notification-bar>
+    </div>
+	<div class="row variableHeight">
+		<div class="medium-5 columns no-padding variableHeight">
+			<app-summary [accountsMain]="this"></app-summary>
+		</div>
+		<div class="medium-7 columns variableHeight detailsVisibility">
+			<app-details [accountsMain]="this"></app-details>
+		</div>
+	</div>
+</div>

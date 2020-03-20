@@ -1,0 +1,11 @@
+<div class="container variableHeight f-topbar-fixed">
+	<div>
+		<app-nav-bar></app-nav-bar>
+	</div>
+ 	<div>
+		<app-notification-bar></app-notification-bar>
+	</div>
+	<div class="row variableHeight">
+		<app-details [accountsMain]="this" [accountKey]="this.route.snapshot.paramMap.get('accountKey')" [accountDetailsOnly]="true"></app-details>
+	</div>
+</div>

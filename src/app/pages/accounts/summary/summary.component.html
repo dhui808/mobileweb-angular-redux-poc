@@ -1,0 +1,26 @@
+<div class="account-summary component-container variableHeight">
+	<div class="title">
+		<span class="medium red title" tabIndex="0">{{viewModel.AccountSummary}}</span>
+	</div>
+	<div id="accountSummarySections">
+		<div *ngFor="let section of viewModel.accountSummarySections">
+			<div class="header-1">
+				<span class="header-1-type small dark-grey" tabIndex="0">{{section.category}}</span>
+			</div>
+			<div id="records">
+				<div *ngFor="let record of section.records" tabIndex="0" class="{{(record.view.className$ | async)?.className}}" (click)="record.view.select()">
+					<div class="account-1-top">
+						<span class="account-1-top-left small dark-grey">{{record.model.description}}</span>
+						<span class="account-1-top-right small dark-grey">{{record.model.accountNum}}</span>
+					</div>
+					<div id="balances">
+						<div class="account-1-bottom" *ngFor="let balance of record.model.balances">
+							<span class="account-1-bottom-right extra-large dark-grey">{{balance.amount}}</span>
+							<span class="account-1-bottom-currency dark-grey small">{{balance.currency}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

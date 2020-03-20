@@ -1,0 +1,82 @@
+<div id="details" class="account-details component-container variableHeight">
+	<div class="account-2-container">
+		<div class="account-2">
+			<div class="account-2-top">
+				<span class="account-1-top-center small" tabIndex="0">{{viewModel.accountName}}</span>
+				<span class="account-2-top-center small" tabIndex="0">{{viewModel.accountNum}}</span>
+			</div>
+			<div class="account-summary-amount">
+	            <span class="account-2-center extra-large black" tabIndex="0">{{viewModel.balanceCurrency}}</span>
+	        </div>
+	    </div>
+	    <div>
+		    <ul class="tabs">
+		        <li class="tab-title two-tabs active" tabIndex="0"><a href="javascript:;" id="tabActivity" tabIndex="-1" (click)="controller.panelActivity()"><span class="small">{{viewModel.Transactions}}</span></a></li>
+		        <li class="tab-title two-tabs" tabIndex="0"><a href="javascript:;" id="tabDetails" (click)="controller.panelDetails()"><span tabIndex="-1" class="small">{{viewModel.AccountDetails}}</span></a></li>
+		    </ul>
+		</div>
+	</div>
+
+	<div class="tabs-container">
+	    <div class="tabs-content">
+	        <div class="content active" id="panelActivity">
+	        		<ul class="pricing-table">
+	        			<div *ngFor="let section of viewModel.historyGrouping">
+							<div class="bullet-item date summary-item clearfix" tabIndex="0">
+						    		<span class="left list-2-left">{{section.dategroup}}</span>
+						    </div>
+						    <div id="records">
+								<div *ngFor="let record of section.records">
+									<div class="bullet-item summary-item clearfix">
+										<div class="small-6 medium-6 large-6 columns">
+											<div class="sub-text black transaction-description" tabIndex="0">{{record.description}}</div>
+										</div>
+										<div class="small-6 medium-6 large-6 columns">
+											<div class="right list-2-right" tabIndex="0">{{record.amount}}</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	        		</ul>
+				<div id="history24section" class="header-1">
+					<span class="header-2-type small" tabIndex="0">
+					{{viewModel.History24}}
+					</span>
+					<span class="header-2-type small" tabIndex="0">
+				  		<a href="https://www.google.com" target="_blank" id="twentyFourMonth" class="clickable input-action small blue">
+				  				{{viewModel.Site}}
+				  		</a>
+				  	</span>
+				  	<span class="header-2-type small" tabIndex="0">
+				  		{{viewModel.Disclaimer}}
+				  	</span>
+				</div>
+	        </div>
+        	<div class="content" id="panelDetails">
+        		<ul class="pricing-table">
+					<div class="row" *ngFor="let section of viewModel.detailListGroup">
+			
+				        <div class="bullet-item details-item clearfix">
+				           
+				            <div class="sub-text black list-2-right" tabIndex="0" data-bind="text: detail"></div>
+				           
+				           
+				            <div class="sub-text black list-2-right" tabIndex="0" data-bind="text: detail"></div>
+				           
+				            
+				            <div class="small-6 medium-6 large-6 columns">
+			
+				                <div class="sub-text black" tabIndex="0" data-bind="text: description">{{section.description}}</div>
+			
+				            </div>
+				            <div class="small-6 medium-6 large-6 columns">
+				                <div class="right list-2-right" tabIndex="0" data-bind="text: detail">{{section.detail}}</div>
+				            </div>
+				        </div>
+				    </div>
+       			</ul>
+        	</div>
+	    </div>
+	</div>
+</div>

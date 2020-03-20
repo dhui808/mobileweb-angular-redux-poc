@@ -1,0 +1,30 @@
+<div class="container variableHeight f-topbar-fixed">
+	<div>
+		<app-title-bar></app-title-bar>
+	</div>
+	<div>
+		<app-notification-bar></app-notification-bar>
+	</div>
+	<div class="mfa-container component-container" id="mfa">
+	    <div class="margin">
+	        <div class="title">
+	            <span class="medium red title" data-bind="text: lbl.MFASecurityQuestion">{{ mfaQuestion$ | async }}</span>
+	        </div>
+	        <form id="mfaForm" data-abide method="post" autoComplete="off" #form="ngForm" (ngSubmit)="controller.handleSubmit($event)">
+	            <div id="question" class="clearfix mb7">
+	                <span id="questionInputText" class="small dark-grey left" for="answerInputText">{{viewModel.question}}</span>
+	            </div>
+	            <div>
+	                <input type="text" placeholder={{viewModel.MFAAnswer}} id="answerInputText" class="answer" autoComplete="off" #answerInputText (change)="controller.handleAnswerChange(answerInputText.value)"/>
+	                <small class="error">{{viewModel.PleaseSelectAQuestion}}</small>
+	            </div>
+	                <div>
+	                    <button id="continue" class="red-button mt10" >{{viewModel.Continue}}</button>
+	                </div>
+	            <div id="disclaimer" class="clearfix">
+	                <span class="small dark-grey left">{{viewModel.MFADisclaimer}}</span>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+</div>

@@ -1,0 +1,61 @@
+<app-notification-bar></app-notification-bar>
+<div class="component-container">
+	<div>
+		<img id="loginLogo" class="login-logo" src={{viewModel.logo}}/>
+	</div>
+	
+	<form id="loginForm" method="post" autoComplete="off" #form="ngForm" (ngSubmit)="controller.handleSubmit($event)">
+		<div class="margin">
+			<div class="clearfix">
+				<label id="cardNumberInputLabel" class="login small dark-grey left" for="cardNumberInputText">{{viewModel.CardNumber}}</label>
+				<label id="saveCheckLabel" class="small dark-grey right" for="saveCheck">{{viewModel.SaveToggle}}</label>
+			</div>
+			<div class="input-1">
+				<div>
+					<input id="cardNumberInputText" type="text" class="login-card-number small" autoComplete="off" (change)="controller.handleUserIdChange($event)"/>
+				</div>
+				<div class="save-card">
+					<input id="saveCheck" type="checkbox" class="save-card" name="saveCheck" data-bind="checked: cardSaved"/>
+					<label tabIndex="0" id="saveCheckLabelStar" class="save-card" for="saveCheck"></label>
+				</div>
+			</div>
+			<label id="passwordInputLabel" class="small dark-grey" for="passwordInputText">{{viewModel.Password}}</label>
+			<div>
+				<input id="passwordInputText" type="password" class="password" autoComplete="off" (change)="controller.handlePasswordChange($event)"/>
+			</div>
+		</div>
+		<div class="row login" id="signin">
+			<div class="large-12 columns">
+			<button type="submit" id="signOnButton" class="red-button mb20">{{viewModel.SignIn}}</button>
+			</div>
+			<div class="large-12 columns c">
+				<a class="clickable naviLinks login-footer-links extra-small black menu-contact" routerLink="/user-management/recover">{{viewModel.ResetPassword}}</a>
+			</div>
+		</div>
+	</form>
+	
+	<div class="block-icons">
+		<ul class="small-block-grid-1" >
+			<li>
+				<a class="clickable naviLinks login-footer-links extra-small black menu-verify" routerLink="/user-management/activate">{{viewModel.Activate}}</a>
+			</li>
+			
+			<li>
+				<a class="clickable naviLinks login-footer-links extra-small black menu-locator" routerLink="/locator">{{viewModel.Locator}}</a>
+			</li>
+		
+			<li>
+				<a class="clickable naviLinks login-footer-links extra-small black menu-contact" routerLink="/contact-us">{{viewModel.ContactUs}}</a>
+			</li>
+		
+			<li>
+				<a class="clickable naviLinks login-footer-links extra-small black menu-security-privacy" routerLink="/security">{{viewModel.Security}}</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="language" class="radio-toolbar">
+		<button class="lang checked-lang" (click)="controller.toggleLanguage()" aria-label="English">EN</button>
+		<button class="lang" (click)="controller.toggleLanguage()" aria-label="Francais">FR</button>
+	</div>
+</div>

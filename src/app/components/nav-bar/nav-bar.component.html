@@ -1,0 +1,24 @@
+<div>
+    <div class="nav-bar fixed">
+        <nav class="top-bar" role="navigation">
+            <ul class="title-area">
+                
+                <li class="toggle-topbar">
+                    <img class="menu"  role="button" alt="Menu" tabIndex="0" src={{viewModel.menuIcon}} (click)="viewModel.toggleMenu()"/>
+                </li>
+            </ul>
+               <section class="middle tab-bar-section">
+               		<img class="logo" tabIndex="0" alt="GlobeBank" src={{viewModel.logo}}/>
+               	</section>
+            <section class="top-bar-section">
+                <div class="navigation-menu">
+				  	<ul class="right" *ngFor="let menuItem of viewModel.menuItems">
+				  		<li>
+							<a class={{menuItem.iconClass}} routerLink={{menuItem.path}} (click)="menuItem.handleClick()">{{menuItem.description}}</a>
+						</li>
+				  	</ul>
+				</div>
+            </section>
+        </nav>
+    </div>
+</div>

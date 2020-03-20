@@ -1,0 +1,6 @@
+<div class="notifications" aria-live="assertive" >
+	<div class="{{ (notification$ | async)?.classNames }}" role="alertdialog" tabindex="-1">
+		<span class="offscreen" alt="Notification"></span>
+		<span class="notification-text" tabindex="0">{{ (notification$ | async)?.text }}</span>
+	</div>
+</div>
