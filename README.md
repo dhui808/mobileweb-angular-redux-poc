@@ -1,4 +1,4 @@
-# Mobile Web Banking PoC with Angular 8, Typescript 3.5.3 and NGRX 8.4
+# Mobile Web Banking PoC with Angular 9, Typescript 3.7.5 and NGRX 8.4
 
 This project illustrates the use of Store, states, reducers, effects, actions, selectors, interceptors, metReducers, NGRX Entity.  
 
