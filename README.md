@@ -1,27 +1,32 @@
 # Mobile Web Banking PoC with Angular 9, Typescript 3.7.5 and NGRX 8.4
 
-This project illustrates the use of Store, states, reducers, effects, actions, selectors, interceptors, metReducers, NGRX Entity.  
+This project illustrates the use of Store, states, reducers, effects, actions, selectors, metReducers, NGRX Entity.  
 
-## Development server
+The Redux pattern is very popular in Angular and React web applications. However, this project shows that using the Redux pattern
+results in bloated applications.  Despite the Redux proponents' claim that Redux reduces boilerplate from applications, 
+The Redux itself consists of boilerplate artifacts: states, actions, reducers, effects and selectors. Actually the applications that
+implement the Redux pattern are significant higher in the total file size. Please compare this project with my other project
+[Angular-MVC] (https://github.com/dhui808/mobileweb-angular-mvc-poc) that employs Component pattern, MVC pattern and Template Method.
+The latter is the architecture I recommend for enterprise applications.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Architecture
 
-## Code scaffolding
+![Architecture](images/reduxflow1.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+![Architecture](images/reduxflow2.png)
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Start Development backend mockup server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+see 
 
-## Running end-to-end tests
+Run `ng serve` for a dev server.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Start Development UI server
 
-## Further help
+Run `ng serve` for a dev server.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
