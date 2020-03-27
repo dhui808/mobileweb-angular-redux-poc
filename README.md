@@ -10,10 +10,7 @@ implement the Redux pattern are significant higher in the total file size. Pleas
 Template Method pattern. The latter is the architecture I recommend for enterprise applications.
 
 ## Architecture
-
 ![Architecture](images/reduxflow1.png)
-
-
 ![Architecture](images/reduxflow2.png)
 
 ## Build
