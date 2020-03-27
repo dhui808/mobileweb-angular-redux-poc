@@ -7,7 +7,7 @@ results in bloated applications.  Despite the Redux proponents' claim that Redux
 The Redux itself consists of boilerplate artifacts: states, actions, reducers, effects and selectors. Actually the applications that
 implement the Redux pattern are significant higher in the total file size. Please compare this project with my other project
 [mobileweb-angular-mvc-poc](https://github.com/dhui808/mobileweb-angular-mvc-poc) that employs Component pattern, MVC pattern and 
-Template Method. The latter is the architecture I recommend for enterprise applications.
+Template Method pattern. The latter is the architecture I recommend for enterprise applications.
 
 ## Architecture
 
