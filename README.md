@@ -1,4 +1,4 @@
-# Mobile Web Banking PoC with Angular 9, Typescript 3.7.5 and NGRX 8.4
+# Mobile Web Banking PoC with Angular and Redux
 
 This project illustrates the impelmentation of Redux pattern in an Angular-based web application, showcasing the use of store, states, 
 reducers, effects, actions, selectors, metReducers and NGRX entity.  
@@ -26,4 +26,9 @@ see [webservice-mock-server](https://github.com/dhui808/webservice-mock-server)
 
 ## Start Development UI server
 Run `ng serve` for a dev server.
+
+## Technology Version
+Angular 9.0.7
+Typescript 3.7.5
+Ngrx 8.4
 
