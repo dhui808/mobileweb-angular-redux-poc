@@ -28,7 +28,6 @@ see [webservice-mock-server](https://github.com/dhui808/webservice-mock-server)
 Run `ng serve` for a dev server.
 
 ## Technology Version
-Angular 9.0.7
-Typescript 3.7.5
+Angular 9.0.7\
+Typescript 3.7.5\
 Ngrx 8.4
-
