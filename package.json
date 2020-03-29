@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --aot  --open",
-    "build": "ng build --prod ",
-    "dev-build": "ng build ",
-    "dev-start": "ng serve  --open",
+    "build": "ng build",
+    "build-prod": "ng build --configuration=production",
+    "build-cloud": "ng build --configuration=cloud",
+    "start": "ng serve",
+    "start-prod": "ng serve --configuration=production",
+    "start-cloud": "ng serve --configuration=cloud",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -5,7 +5,7 @@ import { environment } from '../../environments/environment';
 
 export default abstract class BaseService {
     
-    private BASE_URL = environment.baseUrl
+    private BASE_URL = (environment.baseUrl == '')? (location.protocol + '//' + location.host) : environment.baseUrl
     private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
     constructor(protected http: HttpClient) {}
