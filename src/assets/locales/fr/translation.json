@@ -4,20 +4,20 @@
         "NoTransHistoryDetails" :"Transaction information for this product is currently not available. To view your transactions, please visit the full site at:",
         "History24": "Pour voir l'historique de vos op\u00e9rations des 24 derniers mois, veuillez utiliser le site complet \u00e0:",
         "Site" : "www.globebank.com",
-        "Disclaimer" : "Désolé pour le dérangement."
+        "Disclaimer" : "Nous sommes d\u00e9sol\u00e9s pour tout d\u00e9sagr\u00e9ment occasionné."
     },
     "Errors": {
         "SessionTimeout": "Votre session a pris fin. Veuillez ouvrir une nouvelle session.",
-        "NetworkError": "Nous rencontrons des difficultés techniques. Veuillez réessayer plus tard."
+        "NetworkError": "Nous éprouvons des difficultés techniques. Veuillez réessayer plus tard."
     },
     "Login": {
-        "CardNumber" : "Nom d'utilisateur ou Numéro de Carte",
+        "CardNumber" : "Nom d'utilisateur ou numéro de carte",
         "Password" : "Mot de passe",
         "SaveToggle" : "Souviens-toi de moi",
         "ResetPassword" : "Besoin d'aide pour ouvrir une session?",
         "SignIn" : "Ouvrez une session",
         "Locator" : "Localisateur",
-        "Security" : "Sécurité et Confidentialité des Opérations Bancaires en Ligne",
+        "Security" : "Sécurité bancaire en ligne et confidentialité",
         "Activate" : "Activer les services bancaires en ligne",
         "WelcomeTitle" : "Bienvenue dans notre nouveau site Web mobile!",
         "WelcomeBody" : "Nous avons con\u00E7u notre nouveau site Web mobile avec le souci de vous plaire. Vous y retrouverez un bon nombre des fonctions que vous utilisez d\u00E9j\u00E0, qui sont maintenant plus faciles \u00E0 trouver et plus conviviales.\n\nSi vous ne souhaitez pas utiliser cette version b\u00EAta, vous pouvez toujours effectuer vos op\u00E9rations bancaires:",
@@ -25,8 +25,8 @@
         "MobileApps": "dans l'application des services bancaires mobiles"
     },
     "Account" :{
-        "Transactions": "Historique des Transactions",
-        "AccountDetails": "Détails du Compte"
+        "Transactions": "Op\u00E9rations",
+        "AccountDetails": "Info Compte"
     },
     "Navigation" :{
         "Back" : "Retour",
@@ -40,7 +40,7 @@
         "InvalidCVV" :  "VVC non valide",
         "InvalidPostalCode" :  "Code Postal non valide",
         "InvalidPhoneNumber": "Num\u00E9ro de t\u00E9l\u00E9phone invalide",
-        "ProductTypeFieldError" : "Veuillez choisir un produit ou nom dâ€™utilisateur.",
+        "ProductTypeFieldError" : "Veuillez choisir un produit ou nom d’utilisateur.",
         "ProductNumberFieldError" : "Veuillez entrer le num\u00e9ro de carte ou num\u00e9ro de compte.",
         "FirstNameFieldError" : "Veuillez entrer votre pr\u00e9nom.",
         "LastNameFieldError" : "Veuillez entrer votre nom de famille.",
@@ -92,16 +92,16 @@
         "logoPNG": "images/fr/logo.png"
     },
     "MFA" :{
-        "SecurityQuestion" : "Question de Sécurité",
-        "Answer" : "Répondre",
-        "Disclaimer" : "Mobile Banking et GB OnLineBanking utilisent les mêmes questions de sécurité. Pour obtenir de l'aide, veuillez appeler le 1-800-000-0000."
+        "SecurityQuestion" : "Question de s\u00E9curit\u00E9",
+        "Answer" : "R\u00E9ponse",
+        "Disclaimer" : "Mobile Banking et GB OnLineBanking utilisent les m�mes questions de s�curit�. Pour obtenir de l'assistance, t\u00E9l\u00E9phonez au 1-800-000-0000."
     },
     "Continue" :  "Continuer",
     "AccountSummary" : "Sommaire des Comptes",
-    "Banking" : "Opérations Bancaires Régulières",
-    "Borrowing" : "Emprunter de l'argent",
-    "Investing" : "Investir",
-    "Mortgage" : "Hypothèque",
+    "Banking" : "Op\u00E9rations bancaires courantes",
+    "Borrowing" : "Pr\u00EAts",
+    "Investing" : "Placements",
+    "Mortgage" : "Pr\u00EAt hypoth\u00E9caire",
     "Accounts":"Comptes",
     "Interac" : "Interac",
     "Transfer":"Virement ",
@@ -111,12 +111,12 @@
     "PayABill": "Payer des factures",
     "ToAFriend": "Un ami",
     "ETransfer": "Virement",
-    "MoveMoney" : "Virements et paiements",
+    "MoveMoney" : "Transfert et paiement",
     "Locator" : "Localisatuer",
     "ContactUs":"Contactez-nous",
     "Logout" : "Sortie",
-    "CreateUser": "Créer un nom d'utilisateur",
+    "CreateUser": "Cr\u00e9ation d'un nouveau nom d'utilisateur",
     "UpdateCredentials": "Modification du mot de passe",
     "UsernamePassword" : "Gestion de vos identifiants",
-    "Settings":"Réglages"
+    "Settings":"Param\u00E8tres"
 }

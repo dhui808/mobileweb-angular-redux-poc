@@ -25,7 +25,7 @@
         "MobileApps": "iOS\/Android apps"
     },
     "Account": {
-        "Transactions": "Transaction History",
+        "Transactions": "Transactions",
         "AccountDetails": "Account Details"
     },
     "Navigation": {
@@ -101,8 +101,8 @@
     },
     "Continue" : "Continue",
     "AccountSummary" : "Account Summary",
-    "Banking" : "Regular Banking",
-    "Borrowing" : "Borrowing Money",
+    "Banking" : "Banking",
+    "Borrowing" : "Borrowing",
     "Investing" : "Investing",
     "Mortgage" : "Mortgage",
     "Accounts": "Accounts",
@@ -114,7 +114,7 @@
     "PayABill": "Pay Bills",
     "ToAFriend": "To a Friend",
     "ETransfer": " eTransfer",
-    "MoveMoney": "Move Money",
+    "MoveMoney": "Transfer & Payment",
     "Locator": "Locator",
     "ContactUs": "Contact Us",
     "LogOut": "Log Out",
