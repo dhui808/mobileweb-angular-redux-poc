@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/bankingweb",
-			"baseHref": "/bankingweb",						  
+            "outputPath": "dist/banking",
+			"baseHref": "/banking",						  
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
