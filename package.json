@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
-    "build-prod": "ng build --configuration=production",
-    "build-cloud": "ng build --configuration=cloud",
+    "build": "ng build --base-href=/banking/ --deploy-url=/banking/",
+    "build-prod": "ng build --configuration=production --base-href=/banking/ --deploy-url=/banking/",
+    "build-cloud": "ng build --configuration=cloud --base-href=/banking/ --deploy-url=/banking/",
     "start": "ng serve",
     "start-prod": "ng serve --configuration=production",
     "start-cloud": "ng serve --configuration=cloud",

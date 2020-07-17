@@ -16,7 +16,7 @@
             "aot": true,
             "outputPath": "dist/banking",
 			"baseHref": "/banking",						  
-            "index": "src/index.html",
+            "index": "src/home.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
